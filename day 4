@@ -34,3 +34,48 @@ int main(){
     }
     return 0;
 }
+
+//program 3 
+// pattern printing of  right angle triangle
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter no of lines : ";
+    cin>>n;
+    //no of time to print the pattern
+    for(int i=1 ; i<=n ; i++){
+        //this defines what to print in the pattern
+        for(int j=1 ; j<=i ; j++){
+            cout<<"* ";
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
+
+//program 4 
+//mirror image of right angle triangle
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter no of lines : ";
+    cin>>n;
+    //no of time to print the pattern
+    for(int i=1 ; i<=n ; i++){
+        //this defines what to print in the pattern
+        for(int j=n-i ; j>=1 ; j--){
+            cout<< " ";
+        }
+        for(int k=1 ; k<=i ; k++){
+        cout<<"*";
+    }
+    cout<<"\n";
+    }
+    return 0;
+}
