@@ -1,0 +1,103 @@
+//program 1
+//pattern printing of upper right trianle and its opposite
+#include<iostream>
+using namespace std;
+int main(){
+    for(int i=1 ; i<=5 ; i++){
+        for(int j=1 ; j<=i ; j++){
+        cout<<" *";
+    }
+    cout<<"\n";
+    }
+    for(int k =5-1 ; k>=1 ; k--){
+        for(int l=1 ; l<=k ; l++){
+        cout<<" *";
+    }
+    cout<<"\n";
+    }
+    return 0 ;
+}
+
+//program 2 
+//function declaration and initialisation
+
+#include<iostream>
+using namespace std;
+
+void printmessage(){
+    cout<<"hi we are learning function..";
+}
+int main (){
+    printmessage();
+    return 0;
+}
+
+//program 3 
+//making a function with argument and return type
+
+#include <iostream>
+using namespace std;
+int area(int a ,  int b){
+    return a*b;
+}
+
+int main(){
+    int length = 10;
+    int width = 5;
+    int areaofrectangle = area(length , width);
+    
+    cout<< areaofrectangle;
+}
+
+//program 4.1
+//types of functions
+//no argument and no return type
+
+#include<iostream>
+using namespace std;
+
+void doorbell(){
+    cout<<"ting tong..";
+}
+int main(){
+    doorbell();
+    return 0;
+}
+
+//4.2 argument , no return type
+#include<iostream>
+using namespace std;
+
+void sendtext(string message){
+    cout<<message;
+}
+int main(){
+    sendtext("BJP wons..");
+    return 0 ;
+}
+
+//4.3 no argument , return type
+
+#include<iostream>
+using namespace std;
+int ticketnumber(){
+    return 101;
+}
+int main (){
+    cout<<ticketnumber();
+    return 0;
+}
+
+//4.4 argument , return type
+
+#include<iostream>
+using namespace std;
+
+int currencyconversion (int amountInUSD){
+    return amountInUSD/100;
+}
+
+ int main (){
+     cout<<currencyconversion(10000);
+     return 0;
+ }
