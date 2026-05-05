@@ -101,3 +101,60 @@ int currencyconversion (int amountInUSD){
      cout<<currencyconversion(10000);
      return 0;
  }
+
+//program 5 
+//function overloading
+
+#include<iostream>
+using namespace std;
+int add(int a, int b){
+    return a+b;}
+int add(int a, int b , int c){ 
+    return a+b+c;}
+int add(int a, int b , int c, int d){ 
+    return a+b+c+d;}
+int add(double a, double b){
+    return a+b;}
+int main(){
+    cout<< add(5,2)<<"\n";
+    cout<< add(5,2,3)<<"\n";
+    cout<< add(5,2,3,4)<<"\n";
+    cout<< add(5,5,2,0);
+    
+    return 0;
+}
+
+//program 6 
+//pointer
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age=24;
+    int*ptr=&age;
+    cout<<age<<"\n";
+    cout<<ptr <<"\n";
+    cout<<*ptr<<"\n";
+    
+    *ptr=28;
+    cout<<*ptr;
+}
+
+//program 7
+// addition of two pointers using pointers
+
+#include<iostream>
+using  namespace std;
+
+int main (){
+    int a,b;
+    cin>>a;
+    cin>>b;
+    
+    int*ptr1 = &a;
+    int *ptr2 = &b;
+    
+    int sum = *ptr1 + *ptr2;
+    cout<<sum;
+}
