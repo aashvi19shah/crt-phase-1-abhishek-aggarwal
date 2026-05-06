@@ -1,0 +1,146 @@
+/*//program 1 
+//swapping of values of 2 variables
+
+#include<iostream>
+using namespace std;
+
+void swapnumber(int*x , int*y){
+    int temp = *x;
+    *x=*y;
+    *y=temp;
+}
+
+int main(){
+    int a;
+    int b;
+    cin>>a;
+    cin>>b;
+    
+    swapnumber(&a,&b);
+    cout<<a<<" "<<b;
+}
+
+//program 2 
+//default arguments
+
+#include <iostream>
+using namespace std;
+
+int area (int a , int b =5){
+    return a*b;
+}
+
+int main(){
+    cout<<area(10,3);
+}
+
+//program 3 
+//call by value and call by reference
+//call by value is photocooy
+//call by reference is original copy(address)
+
+#include<iostream>
+using namespace std;
+
+void updatebyvalue(int a){
+    a=500;
+}
+
+void updatebyreference(int&a){
+    a=500;
+}
+
+int main(){
+    int original = 100;
+    cout<<original<<"\n";
+    
+    updatebyvalue(original);
+    cout<<original<<"\n";
+    updatebyreference(original);
+    cout<<original;
+}
+
+
+//practice question
+//coffee shop
+
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"The coffee is of 100 ruppees. "<<"\n";
+    int n;
+    cout<<"no of coffees ? : ";
+    cin>>n;
+    int m;
+    m=n*100;
+    cout<<"Your total amount is "<<m;
+    
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"Which type of coffee do you want? "<<"\n";
+    cout<<"Irish - 100 "<<"\n"<< "Espresso - 150 "<<"\n"<<"Americano - 170"<<"\n"<<"Regular cold coffee - 70"<<"\n";
+    char n;
+    cin>>n;
+    int m;
+    m=n;
+    cout<<"Your total amount is "<<m;
+    
+    return 0;
+}
+
+//coffee machine
+
+#include<iostream>
+using namespace std;
+
+int billing(int a){
+    return a* 30;
+    
+}
+int main(){
+    int coffee = 3;
+    cout<<billing(coffee);
+}*/
+
+// Smart AC Remote // function overloading // default arguments
+
+#include<iostream>
+using namespace std;
+
+void settemperature (int temp = 22){
+    cout<<"Temperature set to"<<temp<<".c"<<"\n";
+}
+
+void settemperature(double temp){
+    cout<<"Temperature set to"<<temp<<".c"<<"\n";
+}
+
+void settemperature(string mode){
+    if(mode=="ECO"){
+        cout<<"Temperature set to 24.c"<<"\n";
+    }else if(mode=="TURBO"){
+        cout<<"Temperature set to 18.c "<<"\n";
+    }
+    }
+int main(){
+    settemperature();
+    settemperature(20.5);
+    settemperature("ECO");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
