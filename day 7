@@ -1,1 +1,107 @@
+//program 1 
+//private access modifier
 
+/*#include <iostream>
+using namespace std;
+
+ class BankAccount {
+    private:
+    int balance = 5000;
+    
+public:
+void showBalance(){
+    cout<<"Balance in your account is : "<<balance;
+}
+};
+
+int main(){
+    BankAccount myaccount;
+    myaccount.showBalance();
+}
+
+//protected access modifier
+
+class parent {
+    protected:
+    int secretcode = 1234;
+};
+class child : public parent{
+    public:
+    void accessofsecretcode(){
+        cout<<"secret code of the locker is : "<<secretcode;
+    }
+};
+int main(){
+    child obj1;
+    obj1.accessofsecretcode();
+}
+
+//program 2 
+//constructor
+//default constructor
+
+class wifiConnection {
+    public:
+    string networkName;
+    string password;
+    
+   wifiConnection() {
+        networkName = "ACTFibre";
+        password = "BJP wons";
+    }
+    public:
+    void showdetails(){
+        cout<<"Network name is "<<networkName<<" and its password is "<<password;
+        
+    }
+};
+
+int main(){
+    wifiConnection obj;
+    obj.showdetails();
+}
+
+class student {
+    public:
+    string name;
+    int id;
+    
+    student(string studentname , int studentID){
+        name=studentname;
+        id=studentID;
+        
+    }
+    public:
+    void displaydetails(){
+        cout<<name<<" "<<id;
+}
+};
+int main(){
+    student std("Aashvi" , 100);
+    std.displaydetails();
+}
+
+// program 3 
+//Encapsulation
+
+class BankAccount{
+    public:
+    int balance;
+    
+    void setbalance(int amount){
+        if(amount>=0){
+            balance=amount;
+        }else{
+            cout<<"Enter a valid number : ";
+        }
+    }
+public:
+int getbalance(){
+    return balance;
+}
+};
+int main(){
+    BankAccount obj;
+    obj.setbalance(5000);
+    cout<<obj.getbalance();
+}*/
