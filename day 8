@@ -1,0 +1,133 @@
+#include<iostream>
+using namespace std;
+
+//program 1 
+//single Inheritance
+/*
+class vehicle{
+public:
+     void start(){
+         cout<<"Vehicle starts"<<"\n";
+     }
+};
+class car : public vehicle{
+public:
+     void drive(){
+         cout<<"Car is running"<<"\n";
+     }
+};
+int main(){
+    car obj;
+    obj.drive();
+    obj.start();
+};
+
+//multilevel Inheritance
+
+class vehicle{
+public:
+     void start(){
+         cout<<"Vehicle starts"<<"\n";
+     }
+};
+class car : public vehicle{
+public:
+     void drive(){
+         cout<<"Car is running"<<"\n";
+     }
+};
+
+class speedometer : public car{
+public:
+     void speed(){
+         cout<<"Car  is at 60kmph"<<"\n";
+     }
+};
+int main(){
+    speedometer obj;
+    obj.start();
+    obj.drive();
+    obj.speed();
+};
+
+//hierarchical Inheritance
+
+class vehicle{
+public:
+     void start(){
+         cout<<"Vehicle starts"<<"\n";
+     }
+};
+class car : public vehicle{
+public:
+     void drive(){
+         cout<<"Car is running"<<"\n";
+     }
+};
+
+class bike : public vehicle{
+public:
+     void ride(){
+         cout<<"bike  is runnning"<<"\n";
+     }
+};
+int main(){
+    bike obj1;
+    obj1.start();
+    obj1.ride();
+    car obj2;
+    obj2.start();
+    obj2.drive();
+};
+
+// multiple Inheritance
+
+class parent1{
+public:
+     void givememoney(){
+         cout<<"Mummy mujhe paise do"<<"\n";
+     }
+};
+class parent2{
+public:
+     void givememoney(){
+         cout<<"Papa mujhe paise do"<<"\n";
+     }
+};
+
+class child : public parent1 , public parent2 {
+};
+int main(){
+    child obj1;
+    //obj1.givememoney();if this is return it will give ambiguous error
+    obj1.parent1::givememoney();
+    obj1.parent2::givememoney();
+};
+
+// this is not the ideal way to do. that's why here comes diamond method.
+
+//Hybrid Inheritance
+
+class A{
+    public:
+    void print(){
+        cout<<"BJP wons";
+    }
+};
+
+class B :virtual public A{
+    
+};
+
+class C :virtual public A{
+    
+};
+
+class D : public B , public C{
+    
+};
+
+int main(){
+    D obj;
+   obj.print();
+}*/
