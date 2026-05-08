@@ -131,3 +131,88 @@ int main(){
     D obj;
    obj.print();
 }*/
+
+//Polymorphism
+//Function overloading
+// google way
+
+int add(int a , int b){
+return a+b;}
+
+int add (int a , int b , int c){
+return (a+b+c);}
+
+int main(){
+   int a=1 , b=4 , c=5;
+    cout<<(a+b)<<endl;
+    cout<<(a+b+c);
+}
+
+//sir way
+
+#include<iostream>
+using namespace std;
+class Math{
+public:
+    void add(int a, int b , int c){
+        cout<<a+b+c<<"\n";
+    }
+public:
+    void add (float a , float b , float c ){
+        cout<<a+b+c<<"\n";
+        
+    }
+};
+
+int main(){
+    Math m;
+
+    m.add(5,5,5);
+    m.add(5.2f,2.2f, 5.8f);
+}
+
+// overriding
+
+class Animal{
+    public:
+    virtual void sound(){
+        cout<<"Animal makes sound";
+    }
+};
+class Dog : public Animal{
+    public:
+    void sound() override {
+        cout<<"Dog makes a sound"<<"\n";
+    }
+};
+class Cat : public Animal{
+    public:
+    void sound() override {
+        cout<<"Cat makes a sound";
+    }
+};
+int main(){
+    Dog d;
+    Cat c;
+    d.sound();
+    c.sound();
+}
+
+//Function overriding
+
+class Parent{
+    public:
+    void sum(int a , int b ){
+        cout<<a+b<<"parent";
+    }
+};
+class child: public Parent{
+    public:
+    void sum(int a , int b){
+        cout<<a+b<<" child";
+    }
+};
+int main(){
+    child c;
+    c.sum(10,20);
+}*/
