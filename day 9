@@ -1,0 +1,152 @@
+#include<iostream>
+using namespace std;
+
+//program 1 
+//function overriding
+/*
+class Appliance{
+    public:
+    virtual void turnOn(){
+        cout<<"Appliance is starting up.."<<"\n";
+    }
+    virtual void work()=0;
+};
+
+class Fan : public Appliance{
+    public:
+    void turnOn() override{
+        cout<<"Fan blades are moving slowly.."<<"\n";
+    }
+    void work() override{
+        cout<<"Fan is giving me cool air.."<<"\n";
+    }
+};
+class Toaster : public Appliance{
+    void work() override {
+        cout<<"Toaster is heating up the breads.."<<"\n";
+    }
+};
+
+int main(){
+    Appliance*kitchenApp;
+    Fan myfan;
+    kitchenApp = &myfan;
+    kitchenApp ->turnOn();
+    kitchenApp ->work();
+    
+    Toaster mytoast;
+    kitchenApp =&mytoast;
+    kitchenApp ->turnOn();
+    kitchenApp ->work();
+}
+
+//program 2 
+// construction overloading
+
+class Rectangle {
+    public:
+    int length;
+    int width;
+    
+    Rectangle(){
+        length=1;
+        width=1;
+    }
+    Rectangle(int side){
+        length=side;
+        width=side;
+    }
+    Rectangle(int side1 , int side2){
+        length=side1;
+        width=side2;
+        
+    }
+    void showArea(){
+        cout<<length*width<<"\n";
+    }
+};
+
+int main (){
+    Rectangle r1;
+    Rectangle r2(5);
+    Rectangle r3 (5,4);
+    
+    r1.showArea();
+    r2.showArea();
+    r3.showArea();
+}
+
+// program 3 
+// Introduction to array + traversal + memory layout
+
+void traversal(int arr[],int size){
+    for(int i=0; i<size ; i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+int main(){
+    int arr[] {10,20,30,40,50};
+    traversal(arr,5);
+}
+
+//program 4 
+//memory address of each data
+
+void traversal(int arr[],int size){
+    for(int i=0; i<size ; i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+int main(){
+    int arr[] {10,20,30,40,50};
+    traversal(arr,5);
+}
+
+// program 5 
+// linear search
+
+int linearSearch(int arr[] , int size , int targetvalue){
+    for(int i=0;i<size;i++){
+        if(arr[i]== targetvalue){
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main(){
+    int arr[] = {10,20,30,40,50};
+    int tatrgetindex = linearSearch(arr,5,40);
+    cout<<tatrgetindex;
+}
+
+//program 6 
+// insert an element in an array
+
+void printArray(int arr[],int size){
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<"\n";
+}
+
+void insertelement(int arr[] , int &size , int index , int value){
+    for (int i=size;i>index;i--){
+        arr[i]=arr[i-1];
+    }
+    arr[index]=value;
+    size++;
+}
+
+int main(){
+    int arr[] = {10,20 ,30,40,50};
+    int size = 5;
+    insertelement (arr,size,2,25);
+    insertelement (arr,size,5,45);
+    insertelement (arr,size,7,55);
+    printArray(arr,size);
+
+return 0;
+}*/
